@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind? Let's talk!</p>
+
+        <form method="POST" class="contact-form">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        {% if success %}
+            <p class="success-message">Your message has been sent successfully!</p>
+        {% endif %}
+    </div>
+</section>
+
+<style>
+.contact-section {
+    background: #f7f7f7;
+    padding: 50px 20px;
+    min-height: 80vh;
+}
+.contact-section .container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: #333;
+}
+.contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+.contact-form button {
+    background: #4a90e2;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover {
+    background: #357ABD;
+}
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+{% endblock %}

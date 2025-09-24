@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="static/myapp/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar glass-nav">
+    <div class="logo">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <body>
+  <div class="portfolio-name">Portfolio</div>
+</body>
+
+ 
+  <!-- Animated Gradient Background -->
+  <div class="bg"></div>
+
+  <!-- HEADER -->
+  <header class="glass">
+    <h1>👋 Hi, I'm <span>AGASH N</span></h1>
+    <p>Back-end Developer • Python • Django • Flask • FastAPI </p>
+    <a href="#projects" class="btn">See My Work</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="glass">
+    <h2>About Me</h2>
+    <p> 
+N AGASH
+agashnagarajan118@gmail.com | 9025206258 | Nagercoil, India 629501
+I am a Computer Science student with strong skills in Python and web development. I enjoy learning new technologies
+and building creative projects. I'm seeking an opportunity to apply my skills in a professional environment and grow as a
+developer.enjoy learning new technologies
+and building creative projects. I'm seeking an opportunity to apply my skills in a professional environment and grow as a
+developer. Devoted to
+giving every customer a positive and memorable experience.
+</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="glass">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress"><div style="width: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Django</span>
+        <div class="progress"><div style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>jQuery</span>
+        <div class="progress"><div style="width: 75%"></div></div>
+      </div>
+      <div class="skill">
+        <span>MySQL</span>
+        <div class="progress"><div style="width: 70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="glass">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project tilt">
+        <h3>Recipe Planner</h3>
+        <p>Plan meals & track ingredients with Django backend.</p>
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+      <div class="project tilt">
+        <h3>Personal Blog</h3>
+        <p>Clean blog with comments, tags & dark-mode.</p>
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+      <div class="project tilt">
+        <h3>Car Booking App</h3>
+        <p>React + Django REST to book & manage cars.</p>
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  {% comment %} <section class="contact-section">
+  <h2>Contact Me</h2>
+  <p>If you have any questions, project ideas, or just want to say hi, feel free to reach out!</p>
+  
+  <div class="contact-details">
+    <div class="contact-item">
+      <h3>Email</h3>
+      <p><a href="mailto:yourname@example.com">mugesh@example.com</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Phone</h3>
+      <p>+91 98765 43210</p>
+    </div>
+    <div class="contact-item">
+      <h3>Location</h3>
+      <p>Theroor, India</p>
+    </div>
+  </div>
+
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section> {% endcomment %}
+
+
+  <!-- FOOTER -->
+  <footer class="glass">
+    <p>&copy; 2025 AGASH —  | +91 90253 32050 ❤️ & Django</p>
+  </footer>
+
+  <!-- VanillaTilt.js for 3D tilt effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.4,
+    });
+  </script>
+</body>
+</html>
